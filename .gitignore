@@ -1,0 +1,13 @@
+
+# Generated files
+target
+
+# Project files
+.idea/
+*.iml
+
+# Mac turds
+.DS_Store
+
+# Project specific generated file
+s_war

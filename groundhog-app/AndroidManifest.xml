@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        package="com.andyspohn.android.groundhog"
+        android:versionCode="10"
+        android:versionName="1.0-SNAPSHOT">
+
+    <uses-sdk
+            android:minSdkVersion="4"/>
+
+    <application
+            android:label="@string/app_name"
+            android:icon="@drawable/icon">
+        <activity
+                android:name=".Groundhog"
+                android:label="@string/app_name"
+                android:icon="@drawable/icon"
+                android:theme="@style/Theme.Groundhog"
+                android:screenOrientation="sensor"
+                android:multiprocess="false"
+                android:launchMode="singleInstance">
+            <intent-filter>
+                <action
+                        android:name="android.intent.action.MAIN"/>
+                <category
+                        android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+
+        <activity
+                android:name=".SdCardUnavailableActivity"
+                android:theme="@style/Theme.Groundhog"/>
+        <service
+                android:name=".GroundhogService"/>
+    </application>
+
+    <uses-permission
+            android:name="android.permission.WRITE_SETTINGS"/>
+    <uses-permission
+            android:name="android.permission.INTERNET"/>
+    <uses-permission
+            android:name="android.permission.WAKE_LOCK"/>
+    <uses-permission
+            android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission
+            android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+    <uses-permission
+            android:name="android.permission.ACCESS_FINE_LOCATION"/>
+</manifest> 

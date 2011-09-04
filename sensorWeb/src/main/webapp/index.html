@@ -1,0 +1,24 @@
+<html>
+<head>
+    <title>GroundHog</title>
+    <style type="text/css">
+        .logo {
+            padding: 15px;
+        }
+    </style>
+    <script type="text/javascript" src="js/jquery/jquery-1.6.3.min.js"></script>
+    <script type="text/javascript" src="js/jquery/json2.js"></script>
+    <script type="text/javascript" src="js/org/cometd.js"></script>
+    <script type="text/javascript" src="js/jquery/jquery.cometd.js"></script>
+    <script type="text/javascript" src="js/application.js"></script>
+    <script type="text/javascript">var config = {contextPath:'/s'};</script>
+</head>
+<body>
+<div class="logo"><img src="img/groundhog_logo.png"/></div>
+From this page you can see the current readings from all the monitored sensors. Move the phone around a bit
+to see the orientation readings update.<br/>
+<br/>
+<b>Location: </b><span id="location">Locating ...</span><br/>
+<b>Orientation: </b><span id="orientation">0</span> degrees<br/>
+</body>
+</html>
